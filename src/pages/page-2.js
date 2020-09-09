@@ -20,6 +20,7 @@ query LessonQuery {
       edges{
         node{
           frontmatter{
+            title,
             path
           }
         }
