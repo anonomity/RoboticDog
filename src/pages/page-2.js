@@ -9,14 +9,20 @@ const SecondPage = ({data}) => (
   
   <Layout>
     <SEO title="Lessons" />
+    <div style={{position: 'relative', left: 0,marginBottom: '50px'}}>
+   
+    </div>
     <Lessons data={data}/>
-    <Link to="/">Go back to the homepage</Link>
+    
   </Layout>
 )
 
 export const query = graphql`
 query LessonQuery {
-    allMarkdownRemark{
+    allMarkdownRemark(
+      sort: {order: DESC, fields: [frontmatter___date]}
+    )
+    {
       edges{
         node{
           frontmatter{

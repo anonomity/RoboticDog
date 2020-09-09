@@ -34,9 +34,9 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer style={{position: 'relative', bottom: '0%', width: '100%'}}>
+        {/* <footer style={{position: 'relative', bottom: '0%', width: '100%'}}>
           © {new Date().getFullYear()} RoboticDog
-        </footer>
+        </footer> */}
       </div>
     </>
   )
