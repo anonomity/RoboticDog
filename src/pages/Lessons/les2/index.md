@@ -6,4 +6,4 @@ tags: ['scratch', 'variables']
 exerpt: "Getting our hands dirty with some programming"
 ---
 
-Lorem ipsum
+This is about the second lesson 
