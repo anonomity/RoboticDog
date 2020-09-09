@@ -1,28 +1,31 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Lessons from "../components/lessons"
 
-const SecondPage = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h1>Lessons</h1>
-    <p>Here are a list of our lessons</p>
-    <ol>
-      <h3>September</h3>
-      <li>Lesson 1</li>
-      <li>Lesson 2</li>
-      <li>Lesson 3</li>
-      <h3>October</h3>
-      <li>Lesson 4</li>
-      <li>Lesson 5</li>
-      <li>Lesson 6</li>
-      <li>Lesson 7</li>
+const SecondPage = ({data}) => (
   
-    </ol>
+  <Layout>
+    <SEO title="Lessons" />
+    <Lessons data={data}/>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 
+export const query = graphql`
+query LessonQuery {
+    allMarkdownRemark{
+      edges{
+        node{
+          frontmatter{
+            path
+          }
+        }
+      }
+    }
+  }
+
+`
 export default SecondPage
