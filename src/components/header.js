@@ -23,20 +23,28 @@ const Header = ({ siteTitle }) => (
       }}
     >
 
+
+
+      <img src={logo} alt="RoboticDog Logo" style={{ height: `50px` }} />
+      {/* {siteTitle} */}
+      <img src={logoText} alt="logo name" style={{ marginLeft: `20px`, marginTop: `10px`, height: `50px` }} />
+
       <Link
         to="/"
         style={{
           color: `white`,
-          textDecoration: `none`,
+          textDecoration: `none`, 
+          fontWeight: 700, 
+          marginLeft: '30px'
         }}
-      >
+      >Home</Link>
+      <Link style={{ color: 'white', fontWeight: 700, marginLeft: '30px', textDecoration: 'none' }} to="/page-2/">
+       
+          Lessons
+  
 
-        <img src={logo} alt="RoboticDog Logo" style={{ height: `50px` }} />
-        {/* {siteTitle} */}
       </Link>
 
-
-      <img src={logoText} alt="logo name" style={{ marginLeft: `20px`, marginTop: `10px`, height: `50px` }} />
 
     </div>
   </header>
