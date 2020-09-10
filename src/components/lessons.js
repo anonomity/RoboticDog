@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 
 const Lessons = ({data}) => {
-    const {edges} = data.allMarkdownRemark
+    const {edges} = data.allMdx
     return (
         <div style={{display: 'flex', flexDirection: 'column'}}>
             {edges.map(edge => {

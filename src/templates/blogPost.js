@@ -1,23 +1,24 @@
 import React from 'react'
 import { graphql } from 'gatsby';
+import Layout from '../components/layout';
 
 const Template = ({data}) => {
-    const title = data.markdownRemark.frontmatter.title
-    const html = data.markdownRemark.html
+    const title = data.mdx.frontmatter.title
+    // const html = data.allMdx.html
     return (
-        <div>
+        <Layout>
             <h1>{title}</h1>
-            <div
+            {/* <div
             dangerouslySetInnerHTML={{__html: html}}
-            />
-        </div>
+            /> */}
+        </Layout>
     )
 }
 
 export const query = graphql`
     query($pathSlug: String!) {
-        markdownRemark(frontmatter: {path : {eq: $pathSlug}}){
-            html
+        mdx(frontmatter: {path : {eq: $pathSlug}}){
+            # html
             frontmatter {
                 title
             }

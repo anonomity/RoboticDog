@@ -9,19 +9,20 @@ exports.createPages = (({graphql, actions}) => {
         resolve(
             graphql(
                 `query{
-                    allMarkdownRemark{
+                    allMdx{
                         edges{
-                            node {
-                                frontmatter {
+                            node{
+                                frontmatter{
                                     path
                                 }
-                            }
+                            }    
                         }
+                     
                     }
-                }
+                    }
                 `
             ).then(result => {
-                result.data.allMarkdownRemark.edges.forEach(({node}) => {
+                result.data.allMdx.edges.forEach(({node}) => {
                     const path = node.frontmatter.path
                     createPage({
                         path, 
