@@ -8,5 +8,4 @@ exerpt: "Introduction Lesson to the first programming semester"
 
 
 
-
 <h2>test </h2>
