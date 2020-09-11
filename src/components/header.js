@@ -44,6 +44,12 @@ const Header = ({ siteTitle }) => (
   
 
       </Link>
+      <Link style={{ color: 'white', fontWeight: 700, marginLeft: '30px', textDecoration: 'none' }} to="/tags">
+       
+          Tags
+  
+
+      </Link>
 
 
     </div>
