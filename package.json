@@ -23,7 +23,8 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.1.0"
+    "prettier": "2.1.0",
+    "sass": "^1.26.10"
   },
   "keywords": [
     "gatsby"
