@@ -1,16 +1,17 @@
 import React from 'react'
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
-
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 const Template = ({data}) => {
     const title = data.mdx.frontmatter.title
-    // const html = data.allMdx.html
+    const body = data.mdx.body
     return (
         <Layout>
             <h1>{title}</h1>
-            {/* <div
-            dangerouslySetInnerHTML={{__html: html}}
-            /> */}
+            <MDXRenderer>{body}</MDXRenderer>
+            {/* <div>
+                {body}
+            </div> */}
         </Layout>
     )
 }
@@ -18,7 +19,7 @@ const Template = ({data}) => {
 export const query = graphql`
     query($pathSlug: String!) {
         mdx(frontmatter: {path : {eq: $pathSlug}}){
-            # html
+            body
             frontmatter {
                 title
             }
