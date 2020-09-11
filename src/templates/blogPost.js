@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+
 const Template = ({data}) => {
     const title = data.mdx.frontmatter.title
     const body = data.mdx.body
