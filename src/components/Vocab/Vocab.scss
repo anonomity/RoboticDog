@@ -4,13 +4,15 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    width: 100vw;
+    width: 100%;
+    margin-top: 80px;
 }
 .infobox {
-    width: 250px;
+    width: 90%;
     background: #424242;
     padding: 10px 5px 5px 5px;
-    margin:10px;
+    margin-left: auto;
+    margin-right: auto;
     color: #fff;
     font-size: 90%;
     position: relative;
@@ -26,7 +28,7 @@
 }
 .infobox h3 {
     background: #3198dd;
-    width: 270px;
+    width: 104%;
     color: #fff;
     padding: 10px 5px;
     margin: 0;
@@ -44,14 +46,27 @@
     text-shadow: #2187c8 0 -1px 1px;
 }
 
+.list {
+    height: 150px;
+    margin-top: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
 .infobox-container .triangle-l {
     border-color: transparent #2083c2 transparent transparent;
     border-style:solid;
     border-width:13px;
     height:0;
     width:0;
-    left: -12px;
-    top: 55px;
+    left: 21px;
+    top: 47px;
     position: absolute;
    
     
@@ -63,18 +78,23 @@
     height:0;
     width:0;
     position: absolute;
-    left: 257px;
-    top: 54px;
+    left: 842px;
+    top: 47px;
     
 }
 
 .infobox a {
-    margin-left: 40px;
     color: #35b0ff;
     text-align: center;
     justify-content: center;
     text-decoration: none;
     border-bottom: 1px dotted transparent;
+}
+
+.link{
+    display: block;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 .infobox a:hover, .infobox a:focus {
     text-decoration: none;

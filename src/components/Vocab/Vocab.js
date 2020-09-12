@@ -16,12 +16,12 @@ function Vocab(props) {
          
         <div class="infobox"> 
         <h3><span>Vocabulary List</span></h3> 
-            <div style={{marginLeft: '60px', marginTop: '10px'}}>
-            <ol>
+            <div class="listContain" >
+            <ol class="list">
                 {wordList}
             </ol>
             </div>
-            <a  href={props.link}>study on quizlet!</a>
+            <a  class ="link" href={props.link}>study on quizlet!</a>
         </div> 
          
         </div>

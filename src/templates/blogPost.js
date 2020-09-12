@@ -2,13 +2,14 @@ import React from 'react'
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import "./posts.scss"
 
 const Template = ({data}) => {
     const title = data.mdx.frontmatter.title
     const body = data.mdx.body
     return (
         <Layout>
-            <h1>{title}</h1>
+            <h1 style={{textAlign: 'center'}}>{title}</h1>
             <MDXRenderer>{body}</MDXRenderer>
             {/* <div>
                 {body}
