@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Link} from 'gatsby';
 
-const allTagsIndex = ({data, pageContext}) => {
+const sindleTagIndex = ({data, pageContext}) => {
     const { posts, tagName } = pageContext
     const strucPost = posts.map((post, index) => {
         return <li key={index}><Link to ={post.frontmatter.path}>{post.frontmatter.title} </Link></li>
@@ -21,4 +21,4 @@ const allTagsIndex = ({data, pageContext}) => {
     )
 }
 
-export default allTagsIndex
+export default sindleTagIndex
