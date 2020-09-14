@@ -27,6 +27,7 @@
     background-image: -moz-linear-gradient(top,#6a6a6a,#424242);
 }
 .infobox h3 {
+    margin-top: 20px;
     background: #3198dd;
     width: 104%;
     color: #fff;
@@ -100,4 +101,32 @@
     text-decoration: none;
     border-bottom: 1px dotted #35b0ff;
     cursor: pointer;
+}
+
+.activity-box{
+    margin-top: 20px;
+    background: #3198dd;
+    width: 104%;
+    color: #fff;
+    padding: 10px 5px;
+
+    font-size: 160%;
+    text-align: center;
+    font-weight: bold;
+  
+    z-index: 100;
+    left: -15px;
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#368254), to(#41e236));
+    background-image: -moz-linear-gradient(top,#368254,#41e236);
+    text-shadow: #2187c8 0 -1px 1px;
+
+}
+
+.title{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
 }
