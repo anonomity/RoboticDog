@@ -1,7 +1,18 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+// Wraps the whole Gatsby element
+import React from "react"
+import { MDXProvider } from "@mdx-js/react"
 
-// You can delete this file if you're not using it
+import Activity from "./src/components/ui/activity";
+
+const MyH3 = (props) => <Activity {...props}/>
+
+
+const components = {
+    h3: MyH3
+  }
+
+export const wrapRootElement =({ element }) => {
+    return (
+        <MDXProvider components={components}>{element}</MDXProvider>
+    )
+}
