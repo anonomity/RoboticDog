@@ -15,7 +15,7 @@ function Vocab(props) {
         <div class="triangle-r"></div> 
          
         <div class="infobox"> 
-        <h3><span>Vocabulary List</span></h3> 
+        <h3><span>{props.title}</span></h3> 
             <div class="listContain" >
             <ol class="list">
                 {wordList}

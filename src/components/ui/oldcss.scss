@@ -6,15 +6,14 @@
     padding: 0;
     width: 100%;
     margin-top: 80px;
-    margin-bottom: 80px;
 }
 .infobox {
     width: 90%;
-    background: white;
+    background: #424242;
     padding: 10px 5px 5px 5px;
     margin-left: auto;
     margin-right: auto;
-    color: black;
+    color: #fff;
     font-size: 90%;
     position: relative;
     z-index: 90;
@@ -24,11 +23,12 @@
     -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
     -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
     box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
-
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6a6b6b), to(#424242));
+    background-image: -moz-linear-gradient(top,#6a6a6a,#424242);
 }
 .infobox h3 {
     margin-top: 20px;
-    background: #296d98;
+    background: #3198dd;
     width: 104%;
     color: #fff;
     padding: 10px 5px;
@@ -42,9 +42,9 @@
     -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
     -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
     box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
-    background-image: -webkit-gradient(linear, left, right, from(#525252), to(#3d72b4));
-    background-image: -moz-linear-gradient(left,#525252,#3d72b4);
-
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#33acfc), to(#3198dd));
+    background-image: -moz-linear-gradient(top,#33acfc,#3198dd);
+    text-shadow: #2187c8 0 -1px 1px;
 }
 
 .list {
@@ -61,7 +61,7 @@
 }
 
 .infobox-container .triangle-l {
-    border-color: transparent #1b628f transparent transparent;
+    border-color: transparent #2083c2 transparent transparent;
     border-style:solid;
     border-width:13px;
     height:0;
@@ -73,7 +73,7 @@
     
 }
 .infobox-container .triangle-r {
-    border-color: transparent transparent transparent #1b628f;
+    border-color: transparent transparent transparent #2083c2;
     border-style:solid;
     border-width:13px;
     height:0;
@@ -85,7 +85,7 @@
 }
 
 .infobox a {
-    color: #1b628f;
+    color: #35b0ff;
     text-align: center;
     justify-content: center;
     text-decoration: none;
@@ -99,13 +99,13 @@
 }
 .infobox a:hover, .infobox a:focus {
     text-decoration: none;
-    border-bottom: 1px dotted #1b628f;
+    border-bottom: 1px dotted #35b0ff;
     cursor: pointer;
 }
 
 .activity-box{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    background: #3198dd;
     width: 104%;
     color: #fff;
     padding: 10px 5px;
@@ -116,18 +116,17 @@
   
     z-index: 100;
     left: -15px;
-    // -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
-    // -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
-    // box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
-    border-radius: 20%;
-    background-image: -webkit-gradient(linear, left, right, from(#525252), to(#3d72b4));
-    background-image: -moz-linear-gradient(left,#525252,#3d72b4);
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#368254), to(#41e236));
+    background-image: -moz-linear-gradient(top,#368254,#41e236);
+    text-shadow: #2187c8 0 -1px 1px;
+
 }
-
-
 
 .title{
     margin-top: 10px;
-    color: #fff;
+    color: white;
     text-align: center;
 }

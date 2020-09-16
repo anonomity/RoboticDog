@@ -3,7 +3,7 @@ import "./Vocab.scss"
 const Activity = (props) => {
     return(
     <div class="activity-box">
-        <h3 class="title" {...props}/>
+        <h2 class="title" {...props}/>
     </div>
     )
 }
