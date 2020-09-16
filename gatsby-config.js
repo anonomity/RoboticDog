@@ -7,7 +7,15 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    
     `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        gatsbyRemarkPlugins: [ `gatsby-remark-images` ],
+        plugins: [ `gatsby-remark-images` ],
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,7 +23,7 @@ module.exports = {
         path: `${__dirname}/src/pages/Lessons`
       }
     },
-    `gatsby-plugin-mdx`,
+    // `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -5,10 +5,14 @@ import { MDXProvider } from "@mdx-js/react"
 import Activity from "./src/components/ui/activity";
 
 const MyH2 = (props) => <Activity {...props}/>
+const MyH3 = (props) => <h3 style={{textAlign: 'center'}} {...props}/>
+const P = (props) => <p style={{textAlign: 'center'}} {...props}/>
 
 
 const components = {
-    h2: MyH2
+    h2: MyH2,
+    h3: MyH3,
+    p: P
   }
 
 export const wrapRootElement =({ element }) => {

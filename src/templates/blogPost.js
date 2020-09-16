@@ -8,16 +8,20 @@ const Template = ({ data }) => {
     const title = data.mdx.frontmatter.title
     const body = data.mdx.body
     return (
-    <Layout>
-            <h1 style={{ textAlign: 'center' }}>{title}</h1>
-            <MDXRenderer>
-                
-                {body}
-            </MDXRenderer>
-            {/* <div>
-                {body}
-            </div> */}
-    </Layout>
+        <Layout >
+            <div style={{ backgroundColor: '#ccc', left: 0, position: 'relative', top: 0, height: '100px' }}>
+                <h1 style={{ textAlign: 'center', paddingTop: '30px' }}>{title}</h1>
+
+            </div>
+      
+
+                <MDXRenderer>
+
+                    {body}
+                </MDXRenderer>
+           
+
+        </Layout>
     )
 }
 
