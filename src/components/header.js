@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => (
       {/* {siteTitle} */}
       <img src={logoText} alt="logo name" style={{ marginLeft: `20px`, marginTop: `10px`, height: `50px` }} />
 
-      <Link
+      {/* <Link
         to="/"
         style={{
           color: `white`,
@@ -37,8 +37,8 @@ const Header = ({ siteTitle }) => (
           fontWeight: 700, 
           marginLeft: '30px'
         }}
-      >Home</Link>
-      <Link style={{ color: 'white', fontWeight: 700, marginLeft: '30px', textDecoration: 'none' }} to="/page-2/">
+      >Home</Link> */}
+      <Link style={{ color: 'white', fontWeight: 700, marginLeft: '30px', textDecoration: 'none' }} to="/">
        
           Lessons
   
