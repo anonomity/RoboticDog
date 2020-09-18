@@ -1,10 +1,95 @@
-.test {
+$primary-color:#296d98;
+$secondary-color: #5a9ac2;
+.img-pos {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
+    border-radius: 20px;
+    height: 350px
 }
 
 .he{
     color: blue;
+}
+
+.tagTitle {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.Tags{
+    display: flex;
+    flex-flow: row wrap;
+    height: 10vh;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.tag {
+    // margin-top: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+}
+
+.tag-cont{
+    
+    background-color: $primary-color;
+    padding: 4px 10px;
+    border-radius: 15px;
+}
+
+.tag-cont:hover{
+    position: relative;
+    background-color: $secondary-color;
+    cursor: pointer;
+    top: -5px;
+}
+
+
+.lesson-cont {
+    border: 2px solid darkcyan;
+    background-color: $primary-color;
+    padding: 5px;
+    text-align: center;
+    margin-top: 25px;
+}
+.lesson-cont:hover {
+    position: relative;
+    background-color: $secondary-color;
+    border: 2px solid lightcyan;
+    top: -5px;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.blogPostTitleBox{
+   background-color: #ccc;
+   left: 0;
+   position: relative;
+   top: 0;
+   height: 120px;
+}
+.blogPostTitle{
+    text-align: center;
+    padding-top: 30px;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+
+@media(max-width: 550px){
+    .blog {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .blogPostTitleBox{
+       
+        height: 150px;
+     }
 }

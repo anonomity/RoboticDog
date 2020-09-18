@@ -1,13 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `RoboticDog`,
-    description: `Dedicated to teaching you programming`,
+    title: `RoboticDog - Program your world`,
+    description: `Website dedicated to teaching kids and young adults programming.`,
     author: `Jackelyn Velez and Staszek Stępień`,
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    
     `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        gatsbyRemarkPlugins: [ `gatsby-remark-images` ],
+        plugins: [ `gatsby-remark-images` ],
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,7 +23,7 @@ module.exports = {
         path: `${__dirname}/src/pages/Lessons`
       }
     },
-    `gatsby-plugin-mdx`,
+    // `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -104,10 +104,9 @@
 }
 
 .activity-box{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 104%;
-    color: #fff;
+    margin: 50px auto;
+    width: 50%;
+
     padding: 10px 5px;
 
     font-size: 160%;
@@ -116,12 +115,11 @@
   
     z-index: 100;
     left: -15px;
-    // -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
-    // -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
-    // box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
-    border-radius: 20%;
-    background-image: -webkit-gradient(linear, left, right, from(#525252), to(#3d72b4));
-    background-image: -moz-linear-gradient(left,#525252,#3d72b4);
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.55);
+    
+    background-color: #368254;
 }
 
 
@@ -130,4 +128,17 @@
     margin-top: 10px;
     color: #fff;
     text-align: center;
+}
+
+@media(max-width: 550px){
+    .activity-box{ width: 80%;}
+    .infobox {
+        width: 100%;
+    }
+    .infobox-container .triangle-l {
+        display: none;
+    }
+    .infobox-container .triangle-r {
+        display: none;
+    }
 }

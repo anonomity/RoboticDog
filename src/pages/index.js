@@ -1,18 +1,38 @@
 import React from "react"
+import { graphql } from "gatsby"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Image from "../components/image"
-const IndexPage = () => (
+import Lessons from "../components/lessons"
+
+const SecondPage = ({ data }) => (
+
   <Layout>
     <SEO title="Home" />
-    <h1>Woof!</h1>
-    <p>Welcome to RoboticDog</p>
-    <p>Are you ready to explore the world of programming?</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-       <Image />
+    <div style={{ position: 'relative', left: 0, marginBottom: '50px' }}>
+
     </div>
-   
+    <Lessons data={data} />
+
   </Layout>
 )
 
-export default IndexPage
+export const query = graphql`
+query LessonQuery {
+  allMdx{
+     	edges{
+        node{
+          frontmatter{
+            title
+            path
+            date
+            exerpt
+          }
+        }
+      }
+      
+    }
+  }
+
+`
+export default SecondPage
