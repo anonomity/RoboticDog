@@ -8,7 +8,7 @@ import Lessons from "../components/lessons"
 const SecondPage = ({ data }) => (
 
   <Layout>
-    <SEO title="Lessons" />
+    <SEO title="Home" />
     <div style={{ position: 'relative', left: 0, marginBottom: '50px' }}>
 
     </div>
@@ -25,6 +25,8 @@ query LessonQuery {
           frontmatter{
             title
             path
+            date
+            exerpt
           }
         }
       }

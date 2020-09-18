@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "RoboticDog - Program your world",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Website dedicated to teaching kids and young adults programming.",
+  "version": "1.0.0",
+  "author": "Jackelyn Velez and Staszek Stępień",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.16",
     "@mdx-js/react": "^1.6.16",

@@ -9,19 +9,19 @@ function Vocab(props) {
     })
     return (
         
-        <div class="infobox-container"> 
+        <div className="infobox-container"> 
  
-        <div class="triangle-l"></div> 
-        <div class="triangle-r"></div> 
+        <div className="triangle-l"></div> 
+        <div className="triangle-r"></div> 
          
-        <div class="infobox"> 
+        <div className="infobox"> 
         <h3><span>{props.title}</span></h3> 
-            <div class="listContain" >
-            <ol class="list">
+            <div className="listContain" >
+            <ol className="list">
                 {wordList}
             </ol>
             </div>
-            <a  class ="link" href={props.link}>study on quizlet!</a>
+            <a  className ="link" href={props.link}>study on quizlet!</a>
         </div> 
          
         </div>

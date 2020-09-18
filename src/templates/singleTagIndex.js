@@ -1,23 +1,25 @@
 import React from 'react';
 
 import {Link} from 'gatsby';
+import "./posts.scss";
+import Layout from "../components/layout";
 
 const sindleTagIndex = ({data, pageContext}) => {
     const { posts, tagName } = pageContext
     const strucPost = posts.map((post, index) => {
-        return <li key={index}><Link to ={post.frontmatter.path}>{post.frontmatter.title} </Link></li>
+        return <Link to ={post.frontmatter.path} className="link"><div className="lesson-cont" key={index}>{post.frontmatter.title}</div> </Link>
     })
     return(
-        <div>
-            <div>
-                Posts about {tagName}
+        <Layout>
+            <div className="tagTitle">
+                Posts about <strong >{tagName}</strong>
             </div>
-            <div>
-                <ul>
+            
+                <div >
                     {strucPost}
-                </ul>
-            </div>
-        </div>
+                </div>
+      
+        </Layout>
     )
 }
 

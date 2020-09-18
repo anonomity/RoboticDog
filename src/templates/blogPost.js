@@ -9,8 +9,9 @@ const Template = ({ data }) => {
     const body = data.mdx.body
     return (
         <Layout >
-            <div style={{ backgroundColor: '#ccc', left: 0, position: 'relative', top: 0, height: '100px' }}>
-                <h1 style={{ textAlign: 'center', paddingTop: '30px' }}>{title}</h1>
+            <div className="blog">
+            <div className="blogPostTitleBox">
+                <h1 className="blogPostTitle">{title}</h1>
 
             </div>
       
@@ -19,6 +20,7 @@ const Template = ({ data }) => {
 
                     {body}
                 </MDXRenderer>
+            </div>
            
 
         </Layout>

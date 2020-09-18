@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `RoboticDog`,
-    description: `Dedicated to teaching you programming`,
+    title: `RoboticDog - Program your world`,
+    description: `Website dedicated to teaching kids and young adults programming.`,
     author: `Jackelyn Velez and Staszek Stępień`,
   },
   plugins: [

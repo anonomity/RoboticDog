@@ -129,3 +129,16 @@
     color: #fff;
     text-align: center;
 }
+
+@media(max-width: 550px){
+    .activity-box{ width: 80%;}
+    .infobox {
+        width: 100%;
+    }
+    .infobox-container .triangle-l {
+        display: none;
+    }
+    .infobox-container .triangle-r {
+        display: none;
+    }
+}

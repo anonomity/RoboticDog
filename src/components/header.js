@@ -3,56 +3,23 @@ import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/logo.svg";
 import logoText from "../images/logoTitle.svg"
+import "./lessonBox.scss"
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#296d98`,
-      marginBottom: `0.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        padding: `0.4rem `,
-        display: `flex`,
-        justifyContent: 'flex-start',
-        flexDirection: `row`,
-        alignItems: `center`,
-        alignContent: `center`,
-
-      }}
-    >
-
-
-
-      <img src={logo} alt="RoboticDog Logo" style={{ height: `50px` }} />
+  <header className= "header" >
+    <nav className="nav">
+      <img src={logo} alt="RoboticDog Logo"  className="logo" />
       {/* {siteTitle} */}
-      <img src={logoText} alt="logo name" style={{ marginLeft: `20px`, marginTop: `10px`, height: `50px` }} />
+      <img src={logoText} alt="logo name" className="logoText" />
 
-      {/* <Link
-        to="/"
-        style={{
-          color: `white`,
-          textDecoration: `none`, 
-          fontWeight: 700, 
-          marginLeft: '30px'
-        }}
-      >Home</Link> */}
-      <Link style={{ color: 'white', fontWeight: 700, marginLeft: '30px', textDecoration: 'none' }} to="/">
-       
+      <Link className="nav-item" to="/">
           Lessons
-  
-
       </Link>
-      <Link style={{ color: 'white', fontWeight: 700, marginLeft: '30px', textDecoration: 'none' }} to="/tags">
-       
+      <Link className="nav-item" to="/tags">
           Tags
-  
-
       </Link>
 
 
-    </div>
+    </nav>
   </header>
 )
 
