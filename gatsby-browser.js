@@ -8,6 +8,7 @@ const MyH2 = (props) => <Activity {...props}/>
 const MyH3 = (props) => <h3 style={{textAlign: 'center'}} {...props}/>
 const P = (props) => <p style={{textAlign: 'center'}} {...props}/>
 
+// #TODO: Make Rules / Explaining Activity Component
 
 const components = {
     h2: MyH2,
