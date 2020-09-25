@@ -4,6 +4,8 @@ import React from "react"
 import logo from "../images/logo.svg";
 import logoText from "../images/logoTitle.svg"
 import "./lessonBox.scss"
+
+// #TODO: Make Hamburger
 const Header = ({ siteTitle }) => (
   <header className= "header" >
     <nav className="nav">
